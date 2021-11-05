@@ -111,9 +111,9 @@ Panda | Trj/Genetic.gen | benign | Trj/Hexas.HEU |
 Zoner | benign | omission | benign |
 Yandex | TrojanSpy.Zbot!DHIuP5NKKgg | Trojan.Delf!msDHBXVvuuM | Trojan.Agent!v0Y1/43kpOQ |
 eGambit | benign | benign | benign | 
-AVG | Win32:Karagany  | Win32:Trojan-gen |
+AVG | Win32:Karagany | Win32:Trojan-gen | omission |
 Cybereason | malicious.381d7d | benign | malicious.7a5905 |
-Avast | Win32:Karagany | Win32:Trojan-gen | 
+Avast | Win32:Karagany | Win32:Trojan-gen | omission |
 CrowdStrike | malicious_confidence_90% (W) | malicious_confidence_90% (W) | malicious_confidence_80% (D) |
 Qihoo-360 | Win32/Trojan.Spy.6ef | Win32/Trojan.5d4 | HEUR/Malware.QVM20.Gen
 
