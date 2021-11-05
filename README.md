@@ -27,12 +27,11 @@ A major adversity in combating malicious applications is the fact that antivirus
 
 Malware detection ranged from 0% to 97.63%, depending on the antivirus being investigated. On average, the 86 antiviruses were able to detect 55.22% of the evaluated virtual pests, with a standard deviation of 30.05%. The high standard deviation indicates that the detection of malicious executables may suffer abrupt variations depending on the antivirus chosen. It is determined that the protection, against cybernetic invasions, is due to the choice of a robust antivirus with a large and updated blacklist.
 
-As for the false negatives, the Zoner antivirus wrongly stated that malware was benign in more than 90% of cases. On average, antiviruses attested false negatives in 17.76% of the cases, with a standard deviation of 18.41%. Tackling the benignity of malware can lead to irrecoverable damage. A person or institution, for example, would rely on a particular malicious application when, in fact, it is malware.
+As for the false negatives, on average, antiviruses attested false negatives in 13.15% of the cases, with a standard deviation of 11.49%. Tackling the benignity of malware can lead to irrecoverable damage. A person or institution, for example, would rely on a particular malicious application when, in fact, it is malware.
 
-On average, the antiviruses were missing in 13.94% of the cases, with a standard deviation of 18.37%. The omission of the diagnosis points to the limitation of these antiviruses that have limited blacklists for detection of malware in real time.
+On average, the antiviruses were missing in 31.71% of the cases, with a standard deviation of 31.88%. The omission of the diagnosis points to the limitation of these antiviruses that have limited blacklists for detection of malware in real time.
 
-It is included as adversity, in the combat to malicious applications, the fact of the commercial antiviruses do not possess a pattern in the classification of the malwares as seen in Table 2. We choose 3 of  1,050 malwares samples in order to exemplify the miscellaneous classifications of commercial antiviruses. In this way, the time when manufacturers react to a new virtual plague is affected dramatically. As there is no a pattern, antiviruses give the names that they want, for example, a company can identify a malware as "Malware.1" and a second company identify it as "Malware12310". Therefore, the lack of a pattern, besides the no-sharing of information among the antivirus manufacturers, hinders the fast and effective detection of a malicious application.
-
+It is included as adversity, in the combat to malicious applications, the fact of the commercial antiviruses do not possess a pattern in the classification of the malwares as seen in Table 2. We choose 3 of  1,174 malwares samples in order to exemplify the miscellaneous classifications of commercial antiviruses. In this way, the time when manufacturers react to a new virtual plague is affected dramatically. As there is no a pattern, antiviruses give the names that they want, for example, a company can identify a malware as "HW32.Packed.5F17" and a second company identify it as " Uds.Dangerousobject.Multi!c". Therefore, the lack of a pattern, besides the no-sharing of information among the antivirus manufacturers, hinders the fast and effective detection of a malicious application.
 
 ###### Table 2 Results of 89 commercial antiviruses:
 
@@ -118,95 +117,111 @@ Prevx|0.14% |1.10% |98.74% |
 Authentium|0.14% |0.14% |99.70% |
 a-squared|0.14% |0.0% |99.85% |
 Alibaba|0.07% |22.46% |77.45% |
-ahnlab|0.0% |0.0% |100.0% |
-Command|0.0% |0.0% |100% |
-SAVMail|0.0% |0.0% |100% |
-FileAdvisor |0.0% |0.0% |100% |
-Ewido |0.0% |0.0% |100% |
-Webwasher-Gateway |0.0% |0.0% |100% |
+ahnlab|0.0% |0.0% |100.00% |
+Command|0.0% |0.0% |100.00% |
+SAVMail|0.0% |0.0% |100.00% |
+FileAdvisor |0.0% |0.0% |100.00% |
+Ewido |0.0% |0.0% |100.00% |
+Webwasher-Gateway |0.0% |0.0% |100.00% |
 
 
 ###### Table 3 Miscellaneous classifications of commercial antiviruses:
 
 Antivírus | VirusShare_000a3ea381d7d70be8b6fe1ee51dca22 | VirusShare_000adc56f2d8cd1f7b8f6b54912000e9 | VirusShare_000b28e7a5905b5bf3b80c6c60a5f828
 --------- | ------------------------------------------- | ------------------------------------------- | --------------------------------------------
-Bkav | HW32.Packed.5F17| HW32.Packed.58DF | HW32.Packed. |
-MicroWorld-eScan | benign| benign | Trojan.Generic.KDZ.5250 |
-nProtect | omission | benign | omission |
-CMC | benign| benign | benign |
-CAT-QuickHeal | TrojanPWS.Zbot.Gen| Trojan.IGENERIC | TrojanPWS.Zbot.Gen |
 McAfee | PWS-Zbot.gen.ahc | Artemis!000ADC56F2D8 | PWS-Zbot.gen.xd | 
-Cylance | Unsafe | Unsafe | Unsafe |
-AegisLab | Troj.W32.Generic!c | Uds.Dangerousobject.Multi!c | Troj.W32.Gen.lIUb |
-VIPRE | Virtool.Win32.Obfuscator.as!c (v) | omission | Trojan.Win32.Agent.akm (v) |
-TheHacker | Trojan/Spy.Zbot.gevq | benign | benign |
-Alibaba | omission | omission | benign |
-K7GW | Trojan  | Trojan ( 000609311 ) | Trojan ( 0040f07e1 ) |
-K7AntiVirus | Trojan | Trojan ( 000609311 ) | Trojan ( 0040f07e1 ) |
-Arcabit | Trojan.Razy.D2577F | benign | Trojan.Generic.KDZ.D1482 |
-Invincea | heuristic | benign | heuristic |
-Baidu | Win32.Trojan.WisdomEyes.16070401.9500.9999 | Win32.Trojan.WisdomEyes.16070401.9500.9535 | benign|
-NANO-Antivirus | Trojan.Win32.Panda.bdrtpq | Trojan.Win32.Fakealert.dxpstc  | Trojan.Win32.Zbot.bobrkr|
-F-Prot | W32/S-3ae86dea!Eldorado | benign | W32/Zbot.HR.gen!Eldorado |
-Symantec | Packed.Generic.459 | Trojan.Gen.2 | Trojan.Zbot!g38 |
-TotalDefense | omission | Win32/Dragon_i | benign |
-ESET-NOD32 | Win32/Spy.Zbot.AAO | a variant of Win32/Delf.NRC | a variant of Win32/Kryptik.ASUX  |
-TrendMicro-HouseCall | TSPY_ZBOT.SM14 | TROJ_GEN.R002H0CAH18 | TSPY_ZBPAK.SML |
-Paloalto | generic.ml | generic.ml | generic.ml |
-ClamAV | Win.Trojan.Zbot-70175 | Win.Trojan.3973235-1 | benign |
-GData | Gen:Variant.Razy.153471 | benign | Trojan.Generic.KDZ.5250 |
+McAfee-GW-Edition | PWS-Zbot.gen.ahc | BehavesLike.Win32.Virus.tc | PWS-Zbot.gen.xd |
 Kaspersky | HEUR:Trojan.Win32.Generic | UDS:DangerousObject.Multi.Generic | HEUR:Trojan.Win32.Generic |
 BitDefender | Gen:Variant.Razy.153471 | benign | Trojan.Generic.KDZ.5250 |
-Babable | benign | omission | benign |
-SUPERAntiSpyware | Trojan.Agent/Gen-Petya | benign | Trojan.Agent/Gen-FakeMS |
-Rising | Spyware.Zbot!8.16B (CLOUD) | benign | Spyware.Zbot!8.16B (CLOUD) |
-Tencent | Win32.Trojan.Falsesign.K | Win32.Trojan.Crypt.K | Win32.Trojan.Falsesign.L |
-Ad-Aware | Gen:Variant.Razy.153471 | benign | Trojan.Generic.KDZ.5250 |
-Emsisoft | Gen:Variant.Razy.153471 (B) | benign | Trojan.Generic.KDZ.5250 (B) |
-Comodo | TrojWare.Win32.PWS.ZBot.XD | .UnclassifiedMalware | benign |
-F-Secure | Trojan:W32/Kamala.A | omission | Trojan:W32/Kamala.A |
-DrWeb | Trojan.PWS.Panda.2401 | Trojan.Fakealert.24993 | Trojan.PWS.Panda.3528 |
-Zillya | omission | Trojan.Genome.Win32.136493 | Trojan.Zbot.Win32.120499 |
-VIPRE | Virtool.Win32.Obfuscator.as!c (v) | omission | Trojan.Win32.Agent.akm (v) |
-TrendMicro | TSPY_ZBOT.SM14 | benign | omission |
-McAfee-GW-Edition | PWS-Zbot.gen.ahc | BehavesLike.Win32.Virus.tc | PWS-Zbot.gen.xd |
-Fortinet | W32/ZBOT.HL!tr | omission | W32/Zbot.AAU!tr |
-Sophos | Troj/Zbot-DHN | Mal/Generic-S | Troj/Zbot-DUZ |
-SentinelOne | omission | static engine - malicious | static engine - malicious |
-Ikarus | Trojan-PWS.Win32.Zbot | Virus.Win32.Parite | Trojan-Spy.Win32.Zbot |
-Cyren | W32/S-3ae86dea!Eldorado | benign | W32/Zbot.HR.gen!Eldorado |
-Jiangmin | benign | Trojan/Agent.crau | Trojan.Generic.abmlq |
-Webroot | W32.Infostealer.Zeus | W32.Malware.Heur | W32.Infostealer.Zeus |
-Avira | TR/Crypt.XPACK.Gen7 | TR/Crypt.CFI.Gen | TR/Pakes.lvqoue |
-MAX | malware (ai score=100) | benign | malware (ai score=100) |
-Antiy-AVL | benign | Trojan/Win32.SGeneric | Trojan[Spy]/Win32.Zbot |
-Kingsoft | Win32.Malware.Generic.a.(kcloud) | benign | Win32.Troj.Zbot.il.(kcloud) |
-Endgame | malicious (high confidence) | malicious (high confidence) | malicious (high confidence) |
-Microsoft | PWS:Win32/Zbot | benign | omission |
-ViRobot | Trojan.Win32.A.Zbot.322648 | Trojan.Win32.Z.Delf.2095298 |  benign |
-ZoneAlarm | HEUR:Trojan.Win32.Generic | UDS:DangerousObject.Multi.Generic | HEUR:Trojan.Win32.Generic |
-Avast-Mobile | benign | benign | benign |
-AhnLab-V3 | Trojan/Win32.Foreign.R41177 | benign | Spyware/Win32.Zbot.R49955 |
-ALYac | Gen:Variant.Razy.153471  | benign | Trojan.Generic.KDZ.5250 |
-AVware | Virtool.Win32.Obfuscator.as!c (v) | Trojan.Win32.Generic.pak!cobra | Trojan.Win32.Agent.akm (v) |
-TACHYON | benign | omission | Trojan-Spy/W32.ZBot.328184 |
-VBA32 | BScope.Trojan-Dropper.Injector | Trojan.Delf | BScope.Malware-Cryptor.SB.01798 |
-WhiteArmor | omission | Malware.HighConfidence | omission |
-Malwarebytes | Trojan.Agent | omission | benign|
-Panda | Trj/Genetic.gen | benign | Trj/Hexas.HEU |
-Zoner | benign | omission | benign |
-Yandex | TrojanSpy.Zbot!DHIuP5NKKgg | Trojan.Delf!msDHBXVvuuM | Trojan.Agent!v0Y1/43kpOQ |
-eGambit | benign | benign | benign | 
-AVG | Win32:Karagany | Win32:Trojan-gen | omission |
-Cybereason | malicious.381d7d | benign | malicious.7a5905 |
+GData | Gen:Variant.Razy.153471 | benign | Trojan.Generic.KDZ.5250 |
 Avast | Win32:Karagany | Win32:Trojan-gen | omission |
+AVG | Win32:Karagany | Win32:Trojan-gen | omission |
+Symantec | Packed.Generic.459 | Trojan.Gen.2 | Trojan.Zbot!g38 |
+Sophos | Troj/Zbot-DHN | Mal/Generic-S | Troj/Zbot-DUZ |
+Panda | Trj/Genetic.gen | benign | Trj/Hexas.HEU |
+Microsoft | PWS:Win32/Zbot | benign | omission |
+Ikarus | Trojan-PWS.Win32.Zbot | Virus.Win32.Parite | Trojan-Spy.Win32.Zbot |
+Fortinet | W32/ZBOT.HL!tr | omission | W32/Zbot.AAU!tr |
+Emsisoft | Gen:Variant.Razy.153471 (B) | benign | Trojan.Generic.KDZ.5250 (B) |
+ESET-NOD32 | Win32/Spy.Zbot.AAO | a variant of Win32/Delf.NRC | a variant of Win32/Kryptik.ASUX  |
+DrWeb | Trojan.PWS.Panda.2401 | Trojan.Fakealert.24993 | Trojan.PWS.Panda.3528 |
+NANO-Antivirus | Trojan.Win32.Panda.bdrtpq | Trojan.Win32.Fakealert.dxpstc  | Trojan.Win32.Zbot.bobrkr|
+MicroWorld-eScan | benign| benign | Trojan.Generic.KDZ.5250 |
+F-Secure | Trojan:W32/Kamala.A | omission | Trojan:W32/Kamala.A |
+VIPRE | Virtool.Win32.Obfuscator.as!c (v) | omission | Trojan.Win32.Agent.akm (v) |
+TrendMicro-HouseCall | TSPY_ZBOT.SM14 | TROJ_GEN.R002H0CAH18 | TSPY_ZBPAK.SML |
+K7AntiVirus | Trojan | Trojan ( 000609311 ) | Trojan ( 0040f07e1 ) |
+AhnLab-V3 | Trojan/Win32.Foreign.R41177 | benign | Spyware/Win32.Zbot.R49955 |
+VBA32 | BScope.Trojan-Dropper.Injector | Trojan.Delf | BScope.Malware-Cryptor.SB.01798 |
+TrendMicro | TSPY_ZBOT.SM14 | benign | omission |
+Antiy-AVL | benign | Trojan/Win32.SGeneric | Trojan[Spy]/Win32.Zbot |
+Ad-Aware | Gen:Variant.Razy.153471 | benign | Trojan.Generic.KDZ.5250 |
+K7GW | Trojan  | Trojan ( 000609311 ) | Trojan ( 0040f07e1 ) |
+Qihoo-360 | Win32/Trojan.Spy.6ef | Win32/Trojan.5d4 | HEUR/Malware.QVM20.Gen |
+Jiangmin | benign | Trojan/Agent.crau | Trojan.Generic.abmlq |
+CAT-QuickHeal | TrojanPWS.Zbot.Gen| Trojan.IGENERIC | TrojanPWS.Zbot.Gen |
+F-Prot | W32/S-3ae86dea!Eldorado | benign | W32/Zbot.HR.gen!Eldorado |
+Arcabit | Trojan.Razy.D2577F | benign | Trojan.Generic.KDZ.D1482 |
+Tencent | Win32.Trojan.Falsesign.K | Win32.Trojan.Crypt.K | Win32.Trojan.Falsesign.L |
+Cyren | W32/S-3ae86dea!Eldorado | benign | W32/Zbot.HR.gen!Eldorado |
+Avira | TR/Crypt.XPACK.Gen7 | TR/Crypt.CFI.Gen | TR/Pakes.lvqoue |
+Rising | Spyware.Zbot!8.16B (CLOUD) | benign | Spyware.Zbot!8.16B (CLOUD) |
+MAX | malware (ai score=100) | benign | malware (ai score=100) |
+ZoneAlarm | HEUR:Trojan.Win32.Generic | UDS:DangerousObject.Multi.Generic | HEUR:Trojan.Win32.Generic |
+Endgame | malicious (high confidence) | malicious (high confidence) | malicious (high confidence) |
+AVware | Virtool.Win32.Obfuscator.as!c (v) | Trojan.Win32.Generic.pak!cobra | Trojan.Win32.Agent.akm (v) |
+Webroot | W32.Infostealer.Zeus | W32.Malware.Heur | W32.Infostealer.Zeus |
+Zillya | omission | Trojan.Genome.Win32.136493 | Trojan.Zbot.Win32.120499 |
+Comodo | TrojWare.Win32.PWS.ZBot.XD | .UnclassifiedMalware | benign |
+Yandex | TrojanSpy.Zbot!DHIuP5NKKgg | Trojan.Delf!msDHBXVvuuM | Trojan.Agent!v0Y1/43kpOQ |
+AegisLab | Troj.W32.Generic!c | Uds.Dangerousobject.Multi!c | Troj.W32.Gen.lIUb |
+Invincea | heuristic | benign | heuristic |
+TheHacker | Trojan/Spy.Zbot.gevq | benign | benign |
+Cylance | Unsafe | Unsafe | Unsafe |
 CrowdStrike | malicious_confidence_90% (W) | malicious_confidence_90% (W) | malicious_confidence_80% (D) |
-Qihoo-360 | Win32/Trojan.Spy.6ef | Win32/Trojan.5d4 | HEUR/Malware.QVM20.Gen
+SentinelOne | omission | static engine - malicious | static engine - malicious |
+ALYac | Gen:Variant.Razy.153471  | benign | Trojan.Generic.KDZ.5250 |
+Malwarebytes | Trojan.Agent | omission | benign|
+Baidu | Win32.Trojan.WisdomEyes.16070401.9500.9999 | Win32.Trojan.WisdomEyes.16070401.9500.9535 | benign|
+SUPERAntiSpyware | Trojan.Agent/Gen-Petya | benign | Trojan.Agent/Gen-FakeMS |
+ClamAV | Win.Trojan.Zbot-70175 | Win.Trojan.3973235-1 | benign |
+ViRobot | Trojan.Win32.A.Zbot.322648 | Trojan.Win32.Z.Delf.2095298 |  benign |
+Paloalto | generic.ml | generic.ml | generic.ml |
+Bkav | HW32.Packed.5F17| HW32.Packed.58DF | HW32.Packed. |
+Kingsoft | Win32.Malware.Generic.a.(kcloud) | benign | Win32.Troj.Zbot.il.(kcloud) |
+TotalDefense | omission | Win32/Dragon_i | benign |
+CMC | benign| benign | benign |
+nProtect | omission | benign | omission |
+Norman | omission |omission |omission |
+AntiVir | omission |omission |omission |
+Agnitum | omission |omission |omission |
+Commtouch | omission |omission |omission |
+PCTools | omission |omission |omission |
+Zoner | benign | omission | benign |
+ByteHero | omission |omission |omission |
+NOD32 | omission |omission |omission |
+WhiteArmor | omission | Malware.HighConfidence | omission |
+VirusBuster| omission |omission |omission |
+eTrust-Vet| omission |omission |omission |
+eSafe| omission |omission |omission |
+Sunbelt| omission |omission |omission |
+Prevx| omission |omission |omission |
+Authentium| omission |omission |omission |
+a-squared| omission |omission |omission |
+Alibaba| omission |omission |omission |
+ahnlab| omission |omission |omission |
+Command| omission |omission |omission |
+SAVMail| omission |omission |omission |
+FileAdvisor| omission |omission |omission |
+Ewido| omission |omission |omission |
+Webwasher-Gateway| omission |omission |omission |
 
 ## Materials and Methods
 
-This paper proposes a database aiming at the classification of 32-bit benign and malware executables. There are  1,050 malicious executables, and 1,050 other benign executables. Therefore, our dataset is suitable for learning with artificial intelligence, since both classes of executables have the same amount.
+This paper proposes a database aiming at the classification of 32-bit benign and malware executables. There are  1,174 malicious executables, and 1,174 other benign executables. Therefore, our dataset is suitable for learning with artificial intelligence, since both classes of executables have the same amount.
 
 Virtual plagues were extracted from databases provided by enthusiastic study groups as VirusShare. As for benign executables, the acquisition came from benign applications repositories such as sourceforge, github and sysinternals. It should be noted that all benign executables were submitted to VirusTotal and all were its benign attested by the main commercial antivirus worldwide. The diagnostics, provided by VirusTotal, corresponding to the benign and malware executables are available in the virtual address of our database.
 
 The purpose of the creation of the database is to give full possibility of the proposed methodology being replicated by third parties in future works. Therefore, the proposed article, by making its database freely available, enables transparency and impartiality to research, as well as demonstrating the veracity of the results achieved. Therefore, it is hoped that the methodology will serve as a basis for the creation of new scientific works.
+
+
