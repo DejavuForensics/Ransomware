@@ -52,7 +52,7 @@ CAT-QuickHeal | TrojanPWS.Zbot.Gen| Trojan.IGENERIC | TrojanPWS.Zbot.Gen |
 McAfee | PWS-Zbot.gen.ahc | Artemis!000ADC56F2D8 | PWS-Zbot.gen.xd | 
 Cylance | Unsafe | Unsafe | Unsafe |
 AegisLab | Troj.W32.Generic!c | Uds.Dangerousobject.Multi!c | Troj.W32.Gen.lIUb |
-VIPRE | omission | Trojan.Win32.Generic.pak!cobra |
+VIPRE | Virtool.Win32.Obfuscator.as!c (v) | omission | Trojan.Win32.Agent.akm (v) |
 TheHacker | Trojan/Spy.Zbot.gevq | benign | benign |
 Alibaba | omission | omission | benign |
 K7GW | Trojan  | Trojan ( 000609311 ) | Trojan ( 0040f07e1 ) |
@@ -60,7 +60,7 @@ K7AntiVirus | Trojan | Trojan ( 000609311 ) | Trojan ( 0040f07e1 ) |
 Arcabit | Trojan.Razy.D2577F | benign | Trojan.Generic.KDZ.D1482 |
 Invincea | heuristic | benign | heuristic |
 Baidu | Win32.Trojan.WisdomEyes.16070401.9500.9999 | Win32.Trojan.WisdomEyes.16070401.9500.9535 | benign|
-NANO-Antivirus | Trojan.Win32.Panda.bdrtpq | omission  | Trojan.Win32.Zbot.bobrkr|
+NANO-Antivirus | Trojan.Win32.Panda.bdrtpq | Trojan.Win32.Fakealert.dxpstc  | Trojan.Win32.Zbot.bobrkr|
 F-Prot | W32/S-3ae86dea!Eldorado | benign | W32/Zbot.HR.gen!Eldorado |
 Symantec | Packed.Generic.459 | Trojan.Gen.2 | Trojan.Zbot!g38 |
 TotalDefense | omission | Win32/Dragon_i | benign |
@@ -68,13 +68,12 @@ ESET-NOD32 | Win32/Spy.Zbot.AAO | a variant of Win32/Delf.NRC | a variant of Win
 TrendMicro-HouseCall | TSPY_ZBOT.SM14 | TROJ_GEN.R002H0CAH18 | TSPY_ZBPAK.SML |
 Paloalto | generic.ml | generic.ml | generic.ml |
 ClamAV | Win.Trojan.Zbot-70175 | Win.Trojan.3973235-1 | benign |
-GData | omission | benign | A:25.18600B:25.13270 |
+GData | Gen:Variant.Razy.153471 | benign | Trojan.Generic.KDZ.5250 |
 Kaspersky | HEUR:Trojan.Win32.Generic | UDS:DangerousObject.Multi.Generic | HEUR:Trojan.Win32.Generic |
 BitDefender | Gen:Variant.Razy.153471 | benign | Trojan.Generic.KDZ.5250 |
-NANO-Antivirus| omission | Trojan.Win32.Fakealert.dxpstc
 Babable | benign | omission | benign |
 SUPERAntiSpyware | Trojan.Agent/Gen-Petya | benign | Trojan.Agent/Gen-FakeMS |
-Rising | omission | benign | Spyware.Zbot!8.16B (CLOUD) |
+Rising | Spyware.Zbot!8.16B (CLOUD) | benign | Spyware.Zbot!8.16B (CLOUD) |
 Tencent | Win32.Trojan.Falsesign.K | Win32.Trojan.Crypt.K | Win32.Trojan.Falsesign.L |
 Ad-Aware | Gen:Variant.Razy.153471 | benign | Trojan.Generic.KDZ.5250 |
 Emsisoft | Gen:Variant.Razy.153471 (B) | benign | Trojan.Generic.KDZ.5250 (B) |
@@ -83,12 +82,12 @@ F-Secure | Trojan:W32/Kamala.A | omission | Trojan:W32/Kamala.A |
 DrWeb | Trojan.PWS.Panda.2401 | Trojan.Fakealert.24993 | Trojan.PWS.Panda.3528 |
 Zillya | omission | Trojan.Genome.Win32.136493 | Trojan.Zbot.Win32.120499 |
 VIPRE | Virtool.Win32.Obfuscator.as!c (v) | omission | Trojan.Win32.Agent.akm (v) |
-TrendMicro | TSPY_ZBOT.SM14 | benign |
+TrendMicro | TSPY_ZBOT.SM14 | benign | omission |
 McAfee-GW-Edition | PWS-Zbot.gen.ahc | BehavesLike.Win32.Virus.tc | PWS-Zbot.gen.xd |
 Fortinet | W32/ZBOT.HL!tr | omission | W32/Zbot.AAU!tr |
 Sophos | Troj/Zbot-DHN | Mal/Generic-S | Troj/Zbot-DUZ |
 SentinelOne | omission | static engine - malicious | static engine - malicious |
-Ikarus Trojan-PWS.Win32.Zbot | Virus.Win32.Parite | Trojan-Spy.Win32.Zbot |
+Ikarus | Trojan-PWS.Win32.Zbot | Virus.Win32.Parite | Trojan-Spy.Win32.Zbot |
 Cyren | W32/S-3ae86dea!Eldorado | benign | W32/Zbot.HR.gen!Eldorado |
 Jiangmin | benign | Trojan/Agent.crau | Trojan.Generic.abmlq |
 Webroot | W32.Infostealer.Zeus | W32.Malware.Heur | W32.Infostealer.Zeus |
@@ -97,7 +96,7 @@ MAX | malware (ai score=100) | benign | malware (ai score=100) |
 Antiy-AVL | benign | Trojan/Win32.SGeneric | Trojan[Spy]/Win32.Zbot |
 Kingsoft | Win32.Malware.Generic.a.(kcloud) | benign | Win32.Troj.Zbot.il.(kcloud) |
 Endgame | malicious (high confidence) | malicious (high confidence) | malicious (high confidence) |
-Microsoft | PWS:Win32/Zbot | benign |
+Microsoft | PWS:Win32/Zbot | benign | omission |
 ViRobot | Trojan.Win32.A.Zbot.322648 | Trojan.Win32.Z.Delf.2095298 |  benign |
 ZoneAlarm | HEUR:Trojan.Win32.Generic | UDS:DangerousObject.Multi.Generic | HEUR:Trojan.Win32.Generic |
 Avast-Mobile | benign | benign | benign |
@@ -110,10 +109,8 @@ WhiteArmor | omission | Malware.HighConfidence | omission |
 Malwarebytes | Trojan.Agent | omission | benign|
 Panda | Trj/Genetic.gen | benign | Trj/Hexas.HEU |
 Zoner | benign | omission | benign |
-Rising | Spyware.Zbot!8.16B (CLOUD) |
 Yandex | TrojanSpy.Zbot!DHIuP5NKKgg | Trojan.Delf!msDHBXVvuuM | Trojan.Agent!v0Y1/43kpOQ |
 eGambit | benign | benign | benign | 
-GData | Gen:Variant.Razy.153471 | benign |
 AVG | Win32:Karagany  | Win32:Trojan-gen |
 Cybereason | malicious.381d7d | benign | malicious.7a5905 |
 Avast | Win32:Karagany | Win32:Trojan-gen | 
