@@ -44,7 +44,6 @@ Antivirus | Deteccion (%) | False Negative (%) | Omission (%)
 
 Antivírus | VirusShare_001627d61a1bde3478ca4965e738dc1e | VirusShare_075efef8c9ca2f675be296d5f56406fa | VirusShare_0dab86f850fd3dafc98d0f2b401377d5
 --------- | ------------------------------------------- | ------------------------------------------- | --------------------------------------------
-
 Bkav | HW32.Packed.5F17| 
 MicroWorld-eScan | benign
 CMC | benign
