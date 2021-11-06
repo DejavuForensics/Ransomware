@@ -226,38 +226,38 @@ The purpose of the creation of the database is to give full possibility of the p
 
 ## Executable Feature Extraction
 
-The extraction of features of executables employs the process of disassembling. Then, the algorithm, referring to the executable, can be studied and later classified by the neural networks described in the next section. In total, 630 features of each executable are extracted, referring to the groups mentioned above. The pescanner tool are employed in order to extract the features of executables  . Next, the groups of features extracted from the executables investigated are detailed.
--	Histogram of instructions, in assembly, referring to the mnemonic  .
--	Number of subroutines invoking TLS (Transport Layer Security).
-	Number of subroutines responsible for exporting data (exports).  
-	APIs (Application Programming Interface) used by the executable.
-	Features related to clues that the computer has suffered fragmentation on its hard disk, as well as accumulated invalid boot attempts  .  
-	Application execution mode. There are two options:
-•	software with a graphical interface (GUI);
-•	software running on the console.
-	Features related to the Operating System. Our digital forensics examines if the tested file tries to:
-•	identify the current operating system user name  ;
-•	access APIs in order to create and manage current OS user profiles  ;
-•	detect the number of milliseconds since the system was initialized  ;
-•	execute an operation in a specific file  ;
-•	identify the version of the Windows Operating System in use  ;
-•	monitor internal message traffic among system processes  ;
-•	alter the Windows startup settings and contents (STARTUPINFO) ;  
-•	allow applications to access functionality provided by shell of the operating system, as well as alter it  ; 
-•	change the logon messages at Windows OS startup  ; 
-•	change native applications linked to standard dialog boxes in order to open and save files, choosing color and font, among other customizations  ;
-•	configure Windows Server licensing   ; 
-•	configure Windows Server 2003  ;
-•	change the system's power settings  ;
-•	open a process, service, or native library of the Operating System   ; 
-•	exclude the context of certificates linked to the Operating System   ; 
-•	copy an existing file to a new file   ; 
-•	create, open, delete, or alter a file   ;
-•	create and execute new process(s)  ; 
-•	create new directory(s)  ; 
-•	search for specific file(s)  ;  
-•	create a service object and add it to the control manager database for a certain service   ; 
-•	encrypt data. It is a typical strategy of ransomwares which sequester the victim's data through cryptography. To decrypt the data, the invader asks the user for a monetary amount so that he victim can have all his data back  ;
+The extraction of features of executables employs the process of disassembling. Then, the algorithm, referring to the executable, can be studied and later classified by the neural networks described in the next section. In total, 630 features of each executable are extracted, referring to the groups mentioned above. The pescanner tool are employed in order to extract the features of executables. Next, the groups of features extracted from the executables investigated are detailed.
+#	Histogram of instructions, in assembly, referring to the mnemonic.
+#	Number of subroutines invoking TLS (Transport Layer Security).
+#	Number of subroutines responsible for exporting data (exports).  
+#	APIs (Application Programming Interface) used by the executable.
+#	Features related to clues that the computer has suffered fragmentation on its hard disk, as well as accumulated invalid boot attempts.  
+#	Application execution mode. There are two options:
+-	software with a graphical interface (GUI);
+-	software running on the console.
+#	Features related to the Operating System. Our digital forensics examines if the tested file tries to:
+-	identify the current operating system user name  ;
+-	access APIs in order to create and manage current OS user profiles  ;
+-	detect the number of milliseconds since the system was initialized  ;
+-	execute an operation in a specific file  ;
+-	identify the version of the Windows Operating System in use  ;
+-	monitor internal message traffic among system processes  ;
+-	alter the Windows startup settings and contents (STARTUPINFO) ;  
+-	allow applications to access functionality provided by shell of the operating system, as well as alter it  ; 
+-	change the logon messages at Windows OS startup  ; 
+-	change native applications linked to standard dialog boxes in order to open and save files, choosing color and font, among other customizations  ;
+-	configure Windows Server licensing   ; 
+-	configure Windows Server 2003  ;
+-	change the system's power settings  ;
+-	open a process, service, or native library of the Operating System   ; 
+-	exclude the context of certificates linked to the Operating System   ; 
+-	copy an existing file to a new file   ; 
+-	create, open, delete, or alter a file   ;
+-	create and execute new process(s)  ; 
+-	create new directory(s)  ; 
+-	search for specific file(s)  ;  
+-	create a service object and add it to the control manager database for a certain service   ; 
+-	encrypt data. It is a typical strategy of ransomwares which sequester the victim's data through cryptography. To decrypt the data, the invader asks the user for a monetary amount so that he victim can have all his data back  ;
 •	access file systems, devices, processes, threads and error handling of the system  ;
 •	change the sound and audio device properties of the system  ;
 •	access graphical content information for monitors, printers, and other Windows OS output devices  ; 
