@@ -227,15 +227,15 @@ The purpose of the creation of the database is to give full possibility of the p
 ## Executable Feature Extraction
 
 The extraction of features of executables employs the process of disassembling. Then, the algorithm, referring to the executable, can be studied and later classified by the neural networks described in the next section. In total, 630 features of each executable are extracted, referring to the groups mentioned above. The pescanner tool are employed in order to extract the features of executables. Next, the groups of features extracted from the executables investigated are detailed.
-#	Histogram of instructions, in assembly, referring to the mnemonic.
-#	Number of subroutines invoking TLS (Transport Layer Security).
-#	Number of subroutines responsible for exporting data (exports).  
-#	APIs (Application Programming Interface) used by the executable.
-#	Features related to clues that the computer has suffered fragmentation on its hard disk, as well as accumulated invalid boot attempts.  
-#	Application execution mode. There are two options:
+######	Histogram of instructions, in assembly, referring to the mnemonic.
+######	Number of subroutines invoking TLS (Transport Layer Security).
+######	Number of subroutines responsible for exporting data (exports).  
+######	APIs (Application Programming Interface) used by the executable.
+######	Features related to clues that the computer has suffered fragmentation on its hard disk, as well as accumulated invalid boot attempts.  
+######	Application execution mode. There are two options:
 -	software with a graphical interface (GUI);
 -	software running on the console.
-#	Features related to the Operating System. Our digital forensics examines if the tested file tries to:
+######	Features related to the Operating System. Our digital forensics examines if the tested file tries to:
 -	identify the current operating system user name  ;
 -	access APIs in order to create and manage current OS user profiles  ;
 -	detect the number of milliseconds since the system was initialized  ;
