@@ -668,12 +668,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	start the wscript.exe file, which can indicate a payload download-based script (package body);
 -	generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
 
-######	Features related to DNS servers (Domain Name System, servers responsible for the translation of URL addresses in IP). It is investigated the audited file tries to:
-
--	connect to DNS servers of dynamic DNS providers;
--	connect to the expired malicious site 3322.org, or its related domain, 125.77.199.30;
--	resolve some Free Hosting domain, possibly malicious.
-
 ######	Features related to native Windows 7 OS programs. It is audited, during its execution, if the suspicious file tries to:
 
 -	allocate write and read memory for execution, usually for unpacking;
