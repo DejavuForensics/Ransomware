@@ -619,13 +619,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	halt at least one process during its execution;
 -	execute the WaitFor statement (executable present in Windows since its version 7, originally has the function of synchronizing events between networked computers, but which evildoers use in harmful ways), possibly to synchronize malicious activities.
 
-######	Features related to exploit-related features which constitute malware attempting to exploit known or unackaged vulnerabilities, faults or defects in the system or one or more of its components in order to cause unforeseen instabilities and behavior on both your hardware and in your software. The proposed digital forensic verifies whether the audited file attempts to:
-
--	contact the HTTP server of the Blackhole Exploit Kit (a threat that had its peak of performance in 2012, aims to download malicious content on the victim's computer);
--	create mutexes of the Sweet Orange EK exploit;
--	create mutexes from other known exploits;
--	use the technique known as heapspray, where memory is completely filled, causing the computer to experience crashes.
-
 ######	Features related to Infostealers, malicious programs that collect confidential information from the affected computer. Digital forensics checks if suspicious file tries to:
 
 -	create files related to infostealer Derusbi;
