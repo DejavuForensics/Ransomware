@@ -517,17 +517,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	Changes to the Windows appearance settings and settings made by users, such as wallpaper, screensaver, and themes (HKEY_USERS);
 -	Changes to Hardware Settings (HKEY_CURRENT_CONFIG).
 
-######	Features related to the use of sandboxes. The digital forensics examines whether the file tried tries to:
-
--	detect whether sandboxes: Cuckoo, Joe, Anubis, Sunbelt, ThreatTrack / GFI / CW or Fortinet are being used, through the presence of their own files;
--	search for known directories where a sandbox can run samples;
--	check if any human activity is being performed;
--	discover the waiting time of Windows in order to determine the total time of Windows activity;
--	install a procedure that monitors mouse events;
--	turn off or restart the system to bypass the sandbox;
--	delay the analysis tasks;
--	turn off Windows functions monitored by the cuckoo sandbox.
-
 ######	Features related to antivirus. Checks if the file being investigated tries to:
 
 -	check for registry keys, in regedit, for Chinese antivirus.
@@ -749,25 +738,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	Checks whether the file tested is a SSH, Telnet, SCP and / or FTP-style FTP client with its files, registry keys and mutexes;
 -	It is investigated whether the suspect file is a suspect downloader (download manager);
 -	It is investigated if the file has in it a path to a pdb extension file, which contains information given directly to the system compiler.
-
-######	Features related to Windows 7 OS (Regedit):
-
--	Changes in associations between file extensions and software installed on the machine (HKEY_CLASSES_ROOT);
--	Changes to the current user information (HKEY_CURRENT_USER);
--	Driver corruption (HKEY_LOCAL_MACHINE);
--	Changes to the Windows appearance settings and settings made by users, such as wallpaper, screensaver, and themes (HKEY_USERS);
--	Changes to Hardware Settings (HKEY_CURRENT_CONFIG).
-
-######	Features related to the use of sandboxes. The digital forensics examines whether the file tried tries to:
-
--	detect whether sandboxes: Cuckoo, Joe, Anubis, Sunbelt, ThreatTrack / GFI / CW or Fortinet are being used, through the presence of their own files;
--	search for known directories where a sandbox can run samples;
--	check if any human activity is being performed;
--	discover the waiting time of Windows in order to determine the total time of Windows activity;
--	install a procedure that monitors mouse events;
--	turn off or restart the system to bypass the sandbox;
--	delay the analysis tasks;
--	turn off Windows functions monitored by the cuckoo sandbox.
 
 ######	Features related to antivirus. Checks if the file being investigated tries to:
 
