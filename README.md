@@ -605,9 +605,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	detect a virtual machine by using pseudo devices (parts of the kernel that act as device drivers but do not actually match any hardware present on the machine);
 -	detect whether it is running in a window, indicative of VirtualBox usage.
 
-######	Features related to bots (machines that perform automatic network tasks, malicious or not, without the knowledge of their owners):
-
--	Check whether the file tries to contact HTTP servers and / or tries to create Mutexes associated with Athena, Beta, DirtJumper, Drive2, Kelihos, Kotver, Madness, Pony, Ruskill, Solar, VNLoader, and Warbot Bots.
 
 ######	Features related to browsers. Checks if the file tried tries to:
 
