@@ -226,6 +226,8 @@ The purpose of the creation of the database is to give full possibility of the p
 
 ## Dynamic Feature Extraction
 
+The features of Jar files originate through the dynamic analysis of suspicious files. Therefore, in our methodology, the malware is executed in order to infect, intentionally, the JVM installed in Windows 7 audited, in real time (dynamic), by the Cuckoo Sandbox. In total, 6,824 features are generated of each Jar file, regarding the monitoring of the suspect file in the proposed controlled environment. 
+
 ######	Features related to Code Injection, a technique used by an attacker to introduce code into vulnerable programs and change their behavior. The auditory checks whether the tested server try to:
 -	execute a process and inject code while it is uncompressed;
 -	injecting code into a remote process using one of the following functions: CreateRemoteThread or NtQueueApcThread.
