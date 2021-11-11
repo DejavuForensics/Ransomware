@@ -668,18 +668,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	start the wscript.exe file, which can indicate a payload download-based script (package body);
 -	generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
 
-######	Features related to native Windows 7 OS programs. It is audited, during its execution, if the suspicious file tries to:
-
--	allocate write and read memory for execution, usually for unpacking;
--	identify analysis tools installed by the location of the installation of said tool;
--	detect the presence of antivirus Avast and BitDefender, through libraries (*. Dll file) present when these antivirus are installed;
--	identify installed antivirus products through the installation directory or registry keys;
--	modify software restriction policies for the purpose of disabling the antivirus;
--	check for known devices or windows from forensic tools and debuggers;
--	detect the presence of the Wine emulator;
--	install yourself on AppInit to inject into new processes;
--	divert AppLocker through a Powershell script, running regsvr32;
-
 ######	Features related to Windows 7 Boot OS. Audit if suspicious file tries to:
 
 -	modify boot configurations;
