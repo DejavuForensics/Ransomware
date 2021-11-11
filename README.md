@@ -541,27 +541,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	modify the browser home page;
 -	acquire private information from locally installed internet browsers.
 
-######	Features related to Firewall. The proposed digital forensics audits if the file tries to:
-
--	modify local firewall policies and settings.
-
-######	Features related to cloud computing. The file is audited when you try to:
-
--	connect to storage services and / or files from Dropbox, Google, MediaFire, MegaUpload, RapidShare, Cloudflare and Wetransfer.
-
-######	Features related to DDoS (Dynamic Danial of Service) attacks:
-
--	Create mutexes, other files and bots known as DDoS of the IPKiller, Dark-DDoS, Eclipse and Blackrev types.
-
-######	Features that seek to disable features of Windows 7 OS and other utilities. The audit checks to see if the file
-
--	modifies system policies to prevent the launch of specific applications or executables;
--	disables browser security warnings;
--	disables Windows security features and properties;
--	disables google SPDY network protocol support in Mozilla Firefox browsers to increase the ability of an internet malware to gain access to sensitive information;
--	disables system restore;
--	disables the Windows Error Reporting and Windows Auto Update features.
-
 ######	Features related to Ransomware (type of malware that by means of encryption, leaves the victim's files unusable, then request a redemption in exchange for the normal use later of the user's files, a redemption usually paid in a non-traceable way, such as bitcoins) .
 
 -	Checks whether the monitored file tries to show, generate, or is an hta file (HTML Application), common extension type in situations involving ransomware.
