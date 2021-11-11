@@ -388,6 +388,19 @@ The purpose of the creation of the database is to give full possibility of the p
 -	Start the wscript.exe file, which can indicate a payload download-based script (package body);
 -	Generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
 
+######	Features associated with network traffic hint windows 7 OS in PCAP format. Audit if suspicious document attempts to:
+-	connect with an IP which is not responding to requests;
+-	resolve a suspicious top domain;
+-	start listening (socket) with some server;
+-	connect to some dynamic DNS domain;
+-	make HTTP requests;
+-	generate ICMP traffic;
+-	connect to some IRC server (possibly part of some BotNet);
+-	make SMTP requests (possibly sending SPAM);
+-	connect to some hidden TOR service through a TOR gateway;
+-	start the wscript.exe file, which can indicate a payload download-based script (package body);
+-	generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
+
 ######	Features related to DNS servers (Domain Name System, servers responsible for the translation of URL addresses in IP). It is investigated the audited file tries to:
 -	Connect to DNS servers of dynamic DNS providers;
 -	Connect to the expired malicious site 3322.org, or its related domain, 125.77.199.30;
@@ -476,20 +489,6 @@ The purpose of the creation of the database is to give full possibility of the p
 ######	Features related to DDoS (Dynamic Danial of Service) attacks:
 
 -	Create mutexes, other files and bots known as DDoS of the IPKiller, Dark-DDoS, Eclipse and Blackrev types.
-
-######	Features associated with network traffic hint windows 7 OS in PCAP format. Audit if suspicious document attempts to:
-
--	connect with an IP which is not responding to requests;
--	resolve a suspicious top domain;
--	start listening (socket) with some server;
--	connect to some dynamic DNS domain;
--	make HTTP requests;
--	generate ICMP traffic;
--	connect to some IRC server (possibly part of some BotNet);
--	make SMTP requests (possibly sending SPAM);
--	connect to some hidden TOR service through a TOR gateway;
--	start the wscript.exe file, which can indicate a payload download-based script (package body);
--	generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
 
 
 ######	Features related to Infostealers, malicious programs that collect confidential information from the affected computer. Digital forensics checks if suspicious file tries to:
