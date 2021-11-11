@@ -668,28 +668,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	start the wscript.exe file, which can indicate a payload download-based script (package body);
 -	generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
 
-######	Features related to Windows 7 Boot OS. Audit if suspicious file tries to:
-
--	modify boot configurations;
--	install a bootkit (malicious files for the purpose of changing and infecting the master boot record of the computer) through modifications to the hard disk;
--	create office documents in the file system;
--	create a Windows executable file on the file system;
--	create or configure registry keys with a long string of bytes, most likely to store a binary file or configure a malware;
--	create a service;
--	create a shortcut to an executable file;
--	use the Windows APIs to generate a cryptographic key;
--	generate a malicious DDE document (Dynamic Data Exchange, originally used to facilitate the transfer of data between Microsoft word and other microsoft office programs, but with its function deflected by hackers in the present time, in order to try to introduce lines of malicious code, microsoft office;
--	erase your original disk binary;
--	load a device driver;
--	release and execute a binary file;
--	remove evidence that a file has been downloaded from the Internet without the user being aware of it;
--	create files, registry keys and / or mutexes related to Fakerean Fraudtool malware;
--	use GetSystemMetrics, a Windows function that was originally used to collect measurements of graphics on screen, now used by hackers in conjunction with malicious Ransomware techniques;
--	create files related to the PWDump / FGDump tools, which were originally used for password management, and are used by hackers to bypass Windows security mechanisms;
--	connect to an IP BitTorrent Bleepchat (encrypted chat service and P2P from BitTorrent);
--	connect to IP's related to Chinese instant messaging services, such as QQ, used by hackers maliciously;
--	access Bitcoin / ALTCoin portfolios, which can be used to transfer funds into illegal transactions.
-
 ######	Features related to file type:
 
 -	Checks whether the file tested is a SSH, Telnet, SCP and / or FTP-style FTP client with its files, registry keys and mutexes;
