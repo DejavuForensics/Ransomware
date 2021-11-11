@@ -509,14 +509,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	It is investigated whether the suspect file is a suspect downloader (download manager);
 -	It is investigated if the file has in it a path to a pdb extension file, which contains information given directly to the system compiler.
 
-######	Features related to Windows 7 OS (Regedit):
-
--	Changes in associations between file extensions and software installed on the machine (HKEY_CLASSES_ROOT);
--	Changes to the current user information (HKEY_CURRENT_USER);
--	Driver corruption (HKEY_LOCAL_MACHINE);
--	Changes to the Windows appearance settings and settings made by users, such as wallpaper, screensaver, and themes (HKEY_USERS);
--	Changes to Hardware Settings (HKEY_CURRENT_CONFIG).
-
 ######	Features related to antivirus. Checks if the file being investigated tries to:
 
 -	check for registry keys, in regedit, for Chinese antivirus.
