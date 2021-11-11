@@ -605,11 +605,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	detect a virtual machine by using pseudo devices (parts of the kernel that act as device drivers but do not actually match any hardware present on the machine);
 -	detect whether it is running in a window, indicative of VirtualBox usage.
 
-######	Features related to malware. Checks whether the audited file tries to:
-
--	create Mutexes (single name files, with a function to set a lock / unlock state, which ensures that only one process at a time uses the resources);
--	create Advanced Persistent Threat (APT) files, or connect to IP addresses and URLs of known threats Carbunak / Anunak, CloudAtlas, Flame, Inception, Panda Putter, Sandworm, Turla Carbon and Turla/Uroboros.
-
 ######	Features related to Backdoors:
 
 -	Checks if the file tries to create Backdoor files, registry keys or Mutexes of the known threats LolBot, SDBot, TDSS, Vanbot and Schwarzesonne.
