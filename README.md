@@ -605,14 +605,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	detect a virtual machine by using pseudo devices (parts of the kernel that act as device drivers but do not actually match any hardware present on the machine);
 -	detect whether it is running in a window, indicative of VirtualBox usage.
 
-
-######	Features related to browsers. Checks if the file tried tries to:
-
--	install a Browser Helper object (usually a DLL file that adds new functions to the browser) in order to let the navigation experience be impaired in some way;
--	modify browser security settings;
--	modify the browser home page;
--	acquire private information from locally installed internet browsers.
-
 ######	Features related to Firewall. The proposed digital forensics audits if the file tries to:
 
 -	Modify local firewall policies and settings.
