@@ -668,12 +668,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	start the wscript.exe file, which can indicate a payload download-based script (package body);
 -	generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
 
-######	Features related to file type:
-
--	Checks whether the file tested is a SSH, Telnet, SCP and / or FTP-style FTP client with its files, registry keys and mutexes;
--	It is investigated whether the suspect file is a suspect downloader (download manager);
--	It is investigated if the file has in it a path to a pdb extension file, which contains information given directly to the system compiler.
-
 ######	Features related to antivirus. Checks if the file being investigated tries to:
 
 -	check for registry keys, in regedit, for Chinese antivirus.
