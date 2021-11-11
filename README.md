@@ -238,14 +238,15 @@ The purpose of the creation of the database is to give full possibility of the p
 -	discover if there is any sniffer or a installed network packet analyzer.
 
 ######	Features related to disable Windows components:
--	Checks if the tested server tries to disable any of the windows programs: CMD.exe, Device Manager, or Registry Editor, by manipulating the Windows registry (\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Disable).
+-	It is audited if the suspect server tries to disable any of the windows programs: CMD.exe, Device Manager, or Registry Editor, by manipulating the Windows registry (\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Disable).
 
 ######	Features related to packing and obfuscation. The proposed digital forensic verifies that the server tested:
 -	has packet or encrypted information indicative of packing
 -	creates a slightly modified copy of itself (polymorphic packing);
 -	is compressed using UPX (Ultimate Packer for Executables) or VMProtect (software used in order to obfuscate code and virtualize programs).
--	Features related to persistence, functionality of backup information in a system, without the need to register them before. Our Sandbox audit if suspicious server tries to:
--	Use javascript in a registry key value in regedit.
+-	
+######	Features related to persistence, functionality of backup information in a system, without the need to register them before. Our Sandbox audit if suspicious server tries to:
+-	use javascript in a registry key value in regedit.
 -	create an ADS (Alternate Data Stream), NTFS feature that contains information to locate a specific file by author or title, used maliciously because as the information that is present in it does not change the characteristics of the file associated with it, transform them into an ideal option for building rootkits, because they are hidden (steganography);
 -	install a self-executing in windows startup (autorun);
 -	install a native executable to run at the beginning of windows boot.
@@ -254,19 +255,19 @@ The purpose of the creation of the database is to give full possibility of the p
 -	Changes in associations between file extensions and software installed on the machine (HKEY_CLASSES_ROOT);
 -	Changes to the current user information (HKEY_CURRENT_USER);
 -	Driver corruption (HKEY_LOCAL_MACHINE);
--	Changes to the Windows appearance settings and settings made by users, such as wallpaper, screensaver, and themes (HKEY_USERS);
--	Changes to Hardware Settings (HKEY_CURRENT_CONFIG).
+-	Changes in Windows appearance settings and settings made by users, such as wallpaper, screensaver, and themes (HKEY_USERS);
+-	Changes in Hardware Settings (HKEY_CURRENT_CONFIG).
 
 ######	Features related to native Windows 7 OS programs. It is audited, during its execution, if the suspicious file tries to:
--	Allocate write and read memory for execution, usually for unpacking;
--	Identify analysis tools installed by the location of the installation of said tool;
--	Detect the presence of antivirus Avast and BitDefender, through libraries (*. Dll file) present when these antivirus are installed;
--	Identify installed antivirus products through the installation directory or registry keys;
--	Modify software restriction policies for the purpose of disabling the antivirus;
--	Check for known devices or windows from forensic tools and debuggers;
--	Detect the presence of the Wine emulator;
--	Install yourself on AppInit to inject into new processes;
--	Divert AppLocker through a Powershell script, running regsvr32;
+-	allocate write and read memory for execution, usually for unpacking;
+-	identify analysis tools installed by the location of the installation of said tool;
+-	detect the presence of antivirus Avast and BitDefender, through libraries (*. Dll file) present when these antivirus are installed;
+-	identify installed antivirus products through the installation directory or registry keys;
+-	modify software restriction policies for the purpose of disabling the antivirus;
+-	check for known devices or windows from forensic tools and debuggers;
+-	detect the presence of the Wine emulator;
+-	install yourself on AppInit to inject into new processes;
+-	divert AppLocker through a Powershell script, running regsvr32;
 
 ######	Features related to Windows 7 Boot OS. Audit if suspicious file tries to:
 
@@ -310,10 +311,10 @@ The purpose of the creation of the database is to give full possibility of the p
 -	find evidence of the presence and use of the yara program, used to perform memory dump's.
 
 ######	Features related to crypto-coin mining:
--	Verify if the tested server tries to connect to mining pools, the goal is to generate virtual currencies without the cognition (and not benefiting) the computer owner.
+-	It is audited if the suspect application tries to connect to mining pools, the goal is to generate virtual currencies without the cognition (and not benefiting) the computer owner.
 
 ######	Features related to system modifications:
--	Verify if the tested server tries to create or modify system certificates, security center warnings, user account control behaviors, desktop wallpaper, or ZoneTransfer.ZoneID values in the ADS(Alternate Data Stream).
+-	It is audited if the suspect application tries to create or modify system certificates, security center warnings, user account control behaviors, desktop wallpaper, or ZoneTransfer.ZoneID values in the ADS(Alternate Data Stream).
 
 ######	Features related to Microsoft Office. Checks if the server tested tries to:
 -	create a suspicious VBA object
@@ -375,19 +376,6 @@ The purpose of the creation of the database is to give full possibility of the p
 -	connect to a Chinese URL shorter with malicious history;
 -	create mutexes related to remote administration tools VNC (Virtual Remote Computer).
 
-######	Features related to network traffic trace Windows 7 OS in PCAP format. Audit if suspicious file tries to:
--	Connect to an IP that is no longer responding to requests;
--	Resolve a suspicious top domain;
--	Start listening (socket) with some server;
--	Connect to some dynamic DNS domain;
--	Make HTTP requests;
--	Generate ICMP traffic;
--	Connect to some IRC server (possibly part of some BotNet);
--	Make SMTP requests (possibly sending SPAM);
--	Connect to some hidden TOR service through a TOR gateway;
--	Start the wscript.exe file, which can indicate a payload download-based script (package body);
--	Generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
-
 ######	Features associated with network traffic hint windows 7 OS in PCAP format. Audit if suspicious document attempts to:
 -	connect with an IP which is not responding to requests;
 -	resolve a suspicious top domain;
@@ -402,13 +390,13 @@ The purpose of the creation of the database is to give full possibility of the p
 -	generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
 
 ######	Features related to DNS servers (Domain Name System, servers responsible for the translation of URL addresses in IP). It is investigated the audited file tries to:
--	Connect to DNS servers of dynamic DNS providers;
--	Connect to the expired malicious site 3322.org, or its related domain, 125.77.199.30;
--	Resolve some Free Hosting domain, possibly malicious.
+-	connect to DNS servers of dynamic DNS providers;
+-	connect to the expired malicious site 3322.org, or its related domain, 125.77.199.30;
+-	resolve some Free Hosting domain, possibly malicious.
 
 ######	Features related to file type:
 
--	Checks whether the file tested is a SSH, Telnet, SCP and / or FTP-style FTP client with its files, registry keys and mutexes;
+-	It is audited if the suspect server the suspect file is a SSH, Telnet, SCP and / or FTP-style FTP client with its files, registry keys and mutexes;
 -	It is investigated whether the suspect file is a suspect downloader (download manager);
 -	It is investigated if the file has in it a path to a pdb extension file, which contains information given directly to the system compiler.
 
@@ -419,16 +407,15 @@ The purpose of the creation of the database is to give full possibility of the p
 ######	Features related to malware. Checks whether the audited file tries to:
 
 -	create Mutexes (single name files, with a function to set a lock / unlock state, which ensures that only one process at a time uses the resources);
--	create Advanced Persistent Threat (APT) files, or connect to IP addresses and URLs of known threats 
--	Carbunak / Anunak, CloudAtlas, Flame, Inception, Panda Putter, Sandworm, Turla Carbon and Turla/Uroboros.
+-	create Advanced Persistent Threat (APT) files, or connect to IP addresses and URLs of known threats: Carbunak/Anunak, CloudAtlas, Flame, Inception, Panda Putter, Sandworm, Turla Carbon and Turla/Uroboros.
 
 ######	Features related to Backdoors:
 
--	Checks if the file tries to create Backdoor files, registry keys or Mutexes of the known threats LolBot, SDBot, TDSS, Vanbot and Schwarzesonne.
+-	It is audited if the suspect file tries to create Backdoor files, registry keys or Mutexes of the known threats LolBot, SDBot, TDSS, Vanbot and Schwarzesonne.
 
 ######	Features related to bots (machines that perform automatic network tasks, malicious or not, without the knowledge of their owners):
 
--	Check whether the file tries to contact HTTP servers and / or tries to create Mutexes associated with Athena, Beta, DirtJumper, Drive2, Kelihos, Kotver, Madness, Pony, Ruskill, Solar, VNLoader, and Warbot Bots.
+-	It is audited if the suspect file tries to contact HTTP servers and / or tries to create Mutexes associated with Athena, Beta, DirtJumper, Drive2, Kelihos, Kotver, Madness, Pony, Ruskill, Solar, VNLoader, and Warbot Bots.
 
 ######	Features related to browsers. Checks if the suspect file tries to:
 
@@ -439,11 +426,11 @@ The purpose of the creation of the database is to give full possibility of the p
 
 ######	Features related to Bitcoin:
 
--	Examines whether the tested file attempts to install the OpenCL library, Bitcoins mining tool.
+-	It is examined if the suspect file attempts to install the OpenCL library, Bitcoins mining tool.
 
 ######	Features related to Ransomware (type of malware that by means of encryption, leaves the victim's files unusable, then request a redemption in exchange for the normal use later of the user's files, a redemption usually paid in a non-traceable way, such as bitcoins) .
 
--	Checks whether the monitored file tries to show, generate, or is an hta file (HTML Application), common extension type in situations involving ransomware.
+-	It is monitored if the suspect file tries to show, generate, or is an hta file (HTML Application), common extension type in situations involving ransomware.
 
 ######	Features related to exploit-related features which constitute malware attempting to exploit known or unackaged vulnerabilities, faults or defects in the system or one or more of its components in order to cause unforeseen instabilities and behavior on both your hardware and in your software. The proposed digital forensic verifies whether the audited file attempts to:
 
@@ -480,16 +467,15 @@ The purpose of the creation of the database is to give full possibility of the p
 
 ######	Features related to Firewall. The proposed digital forensics audits if the file tries to:
 
--	Modify local firewall policies and settings.
+-	modify local firewall policies and settings.
 
 ######	Features related to cloud computing. The file is audited when you try to:
 
--	Connect to storage services and / or files from Dropbox, Google, MediaFire, MegaUpload, RapidShare, Cloudflare and Wetransfer.
+-	connect to storage services and / or files from Dropbox, Google, MediaFire, MegaUpload, RapidShare, Cloudflare and Wetransfer.
 
 ######	Features related to DDoS (Dynamic Danial of Service) attacks:
 
--	Create mutexes, other files and bots known as DDoS of the IPKiller, Dark-DDoS, Eclipse and Blackrev types.
-
+-	It is audited if the suspect file create mutexes, other files and bots known as DDoS of the IPKiller, Dark-DDoS, Eclipse and Blackrev types.
 
 ######	Features related to Infostealers, malicious programs that collect confidential information from the affected computer. Digital forensics checks if suspicious file tries to:
 
