@@ -619,10 +619,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	start the wscript.exe file, which can indicate a payload download-based script (package body);
 -	generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
 
-######	Features related to Ransomware (type of malware that by means of encryption, leaves the victim's files unusable, then request a redemption in exchange for the normal use later of the user's files, a redemption usually paid in a non-traceable way, such as bitcoins).
-
--	Check whether the monitored file tries to show, generate, or is an hta file (HTML Application), common extension type in situations involving ransomware.
-
 ######	Features related to executable files. The proposed digital forensic verifies that the suspect file tries to:
 
 -	use the BITSAdmin tool (command line tool originally used to download and upload files, as well as track the progress of this transfer, but which malicious hackers use) to download any file;
