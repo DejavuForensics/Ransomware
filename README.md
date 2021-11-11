@@ -605,10 +605,6 @@ The extraction of features of executables employs the process of disassembling. 
 -	detect a virtual machine by using pseudo devices (parts of the kernel that act as device drivers but do not actually match any hardware present on the machine);
 -	detect whether it is running in a window, indicative of VirtualBox usage.
 
-######	Features related to Backdoors:
-
--	Checks if the file tries to create Backdoor files, registry keys or Mutexes of the known threats LolBot, SDBot, TDSS, Vanbot and Schwarzesonne.
-
 ######	Features related to the banking threats (Trojan horses):
 
 -	Find out if the test file tries to create registry keys, Mutexes or Trojan files, and / or try to contact HTTP servers of the known threats. Banking Banking, Banking, Prinyalka Banking, SpyEye, Tinba Banking, Zeus, Zeus P2P, Dridex, Emotet and Online Banking.
