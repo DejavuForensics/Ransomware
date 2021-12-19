@@ -33,7 +33,7 @@ On average, the antiviruses were missing in 31.71% of the cases, with a standard
 
 It is included as adversity, in the combat to malicious applications, the fact of the commercial antiviruses do not possess a pattern in the classification of the malwares as seen in Table 2. We choose 3 of  1,174 malwares samples in order to exemplify the miscellaneous classifications of commercial antiviruses. In this way, the time when manufacturers react to a new virtual plague is affected dramatically. As there is no a pattern, antiviruses give the names that they want, for example, a company can identify a malware as "HW32.Packed.5F17" and a second company identify it as " Uds.Dangerousobject.Multi!c". Therefore, the lack of a pattern, besides the no-sharing of information among the antivirus manufacturers, hinders the fast and effective detection of a malicious application.
 
-###### Table 2 Results of 89 commercial antiviruses:
+###### Table 2 Results of 86 commercial antiviruses:
 
 Antivirus | Deteccion (%) | False Negative (%) | Omission (%)
 --------- | ------------- | ------------------ | -------------
