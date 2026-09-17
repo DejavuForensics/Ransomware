@@ -1,4 +1,4 @@
-# Ransomware
+# Ransomware.
 Retrieval for Ransomware Malware Analysis
 
 ## Commercial Antivirus Limitation
